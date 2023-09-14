@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import { motion } from 'framer-motion';
+import Projects from "./components/Projects";
 
 export default function Home() {
   return (
@@ -20,8 +21,7 @@ export default function Home() {
         <div className="h-[88vh] w-full mx-auto px-4">
           <Banner />
           <About />
-          {/* Experience */}
-          {/* Projects */}
+          <Projects />
           {/* Archive */}
           {/* contact */}
           {/* footer */}
