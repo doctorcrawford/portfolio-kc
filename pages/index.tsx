@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import { motion } from 'framer-motion';
 import Projects from "./components/Projects";
+import Archive from "./components/Archive";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
           <Banner />
           <About />
           <Projects />
-          {/* Archive */}
+          <Archive />
           {/* contact */}
           {/* footer */}
         </div>
