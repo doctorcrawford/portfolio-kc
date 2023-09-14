@@ -17,7 +17,7 @@ export default function Home() {
           className="hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0">
           <LeftSide />
         </motion.div>
-        <div className="h-[88vh] float-left w-full mx-auto px-4">
+        <div className="h-[88vh] w-full mx-auto px-4">
           <Banner />
           <About />
           {/* Experience */}
