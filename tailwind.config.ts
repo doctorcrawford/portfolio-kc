@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        bodyFont: ["Montserrat", "sans-serif"],
+        titleFont: ["Inter", "sans-serif"],
+      }
     },
   },
   plugins: [],
