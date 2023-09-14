@@ -6,6 +6,7 @@ import About from "./components/About";
 import { motion } from 'framer-motion';
 import Projects from "./components/Projects";
 import Archive from "./components/Archive";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
           <About />
           <Projects />
           <Archive />
-          {/* contact */}
+          <Contact />``
           {/* footer */}
         </div>
         <motion.div
