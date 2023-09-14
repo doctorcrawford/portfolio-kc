@@ -16,6 +16,7 @@ const Archive = () => {
           link="https://linktr.ee/knxnmusic"
         />
       </div>
+      {/* Show more button goes here if enough archivecards pile up. see 1:43:00 in https://www.youtube.com/watch?v=fkrDAaAMcpY */}
     </div>
   )
 }
