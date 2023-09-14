@@ -20,61 +20,61 @@ const About = () => {
           </p>
           <ul className="max-w-[450] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
             <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+              <span className="text-textYellow">
                 <FaOctopusDeploy />
               </span>
               Javascript
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+              <span className="text-textYellow">
                 <FaOctopusDeploy />
               </span>
               Typescript
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+              <span className="text-textYellow">
                 <FaOctopusDeploy />
               </span>
               React
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+              <span className="text-textYellow">
                 <FaOctopusDeploy />
               </span>
               Next.js
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+              <span className="text-textYellow">
                 <FaOctopusDeploy />
               </span>
               Three.js
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+              <span className="text-textYellow">
                 <FaOctopusDeploy />
               </span>
               C#/.Net
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+              <span className="text-textYellow">
                 <FaOctopusDeploy />
               </span>
               MySQL
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+              <span className="text-textYellow">
                 <FaOctopusDeploy />
               </span>
               Firebase
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+              <span className="text-textYellow">
                 <FaOctopusDeploy />
               </span>
               Material UI
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+              <span className="text-textYellow">
                 <FaOctopusDeploy />
               </span>
               Tailwindcss
@@ -89,9 +89,9 @@ const About = () => {
                 src={headshot}
                 alt="headshot"
               />
-              <div className="hidden lgl:inline-block absolute w-full h-80 bg-textGreen/20 roudned-md top-0 left-0 group-hover:bg-transparent duration-300"></div>
+              <div className="hidden lgl:inline-block absolute w-full h-80 bg-textYellow/20 roudned-md top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
-            <div className="hidden lgl:inline-flex w-full h-80 translate-x-4 -translate-y-64 border-2 border-textGreen rounded-md group-hover:translate-x-2 group-hover:-translate-y-66 transition-transform duration-300"></div>
+            <div className="hidden lgl:inline-flex w-full h-80 translate-x-4 -translate-y-64 border-2 border-textYellow rounded-md group-hover:translate-x-2 group-hover:-translate-y-66 transition-transform duration-300"></div>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ const RightSide = () => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-end gap-6 text-textLight">
       <a href="mailto:kcraw217@gmail.com">
-        <p className="text-sm rotate-90 w-72 tracking-wide text-textGreen">
+        <p className="text-sm rotate-90 w-72 tracking-wide text-textYellow">
           email@me.com
         </p>
       </a>

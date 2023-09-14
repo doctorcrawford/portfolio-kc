@@ -25,12 +25,12 @@ const Projects = () => {
               />
             </a>
             <div className='w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10'>
-              <p className='font-titleFont text-textGreen text-sm tracking-wide'>
+              <p className='font-titleFont text-textYellow text-sm tracking-wide'>
                 Featured Project
               </p>
               <h3 className='text-2xl font-bold'>Synethesia</h3>
               <p className='bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md'>
-                A music visualizer with 3D artwork utilizing that is <span className='text-textGreen'>interactive with the music</span> being played.
+                A music visualizer with 3D artwork utilizing that is <span className='text-textYellow'>interactive with the music</span> being played.
               </p>
               <ul className='text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark'>
                 <li>Three.js</li>
@@ -39,14 +39,14 @@ const Projects = () => {
               </ul>
               <div className='text-2xl flex gap-4'>
                 <a
-                  className='hover:text-textGreen duration-300'
+                  className='hover:text-textYellow duration-300'
                   href="https://github.com/doctorcrawford/synesthesia"
                   target='_blank'
                 >
                   <TbBrandGithub />
                 </a>
                 <a
-                  className='hover:text-textGreen duration-300'
+                  className='hover:text-textYellow duration-300'
                   href="https://doctorcrawford.github.io/synesthesia/"
                   target='_blank'
                 >
@@ -71,12 +71,12 @@ const Projects = () => {
               />
             </a>
             <div className='w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right z-10'>
-              <p className='font-titleFont text-textGreen text-sm tracking-wide'>
+              <p className='font-titleFont text-textYellow text-sm tracking-wide'>
                 Featured Project
               </p>
               <h3 className='text-2xl font-bold'>Mouse Mingle</h3>
               <p className='bg-[#112240] text-sm md:text-base p-2 xl:-mr-16 md:p-6 rounded-md'>
-                A <span className='text-textGreen'>dating app for rodents</span>. User can login and see all the available rodents including their name, a photo, and a link to their further details. User can then upvote or downvote any of the rodents.
+                A <span className='text-textYellow'>dating app for rodents</span>. User can login and see all the available rodents including their name, a photo, and a link to their further details. User can then upvote or downvote any of the rodents.
               </p>
               <ul className='text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark'>
                 <li>C#/.Net</li>
@@ -87,7 +87,7 @@ const Projects = () => {
               </ul>
               <div className='text-2xl flex gap-4'>
                 <a
-                  className='hover:text-textGreen duration-300'
+                  className='hover:text-textYellow duration-300'
                   href="https://github.com/doctorcrawford/MouseMingleMonoRepo"
                   target='_blank'
                 >
