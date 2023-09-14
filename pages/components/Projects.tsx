@@ -1,12 +1,14 @@
-import Image from 'next/image'
+import Image from 'next/image';
 import synesthesia from '@/public/assets/images/synesthesia.png';
-import SectionTitle from './SectionTitle'
+import SectionTitle from './SectionTitle';
+import { TbBrandGithub } from 'react-icons/tb';
+import { RxOpenInNewWindow } from 'react-icons/rx';
 
 const Projects = () => {
   return (
     <section id='project' className='max-w-container mx-auto lgl:px-20 py-24'>
       <SectionTitle title='Some Things I Have Built' titleNo='02' />
-      {/* Proejct one */}
+      {/* Project one */}
       <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'>
         <div className='flex flex-col xl:flex-row gap-6'>
           <a
@@ -26,8 +28,29 @@ const Projects = () => {
             </p>
             <h3 className='text-2xl font-bold'>Synethesia</h3>
             <p className='bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md'>
-              A music visualizer with 3D artwork utilizing <span className='text-textGreen'>Three.js</span> that is <span className='text-textGreen'>interactive with the music</span> being played.
+              A music visualizer with 3D artwork utilizing that is <span className='text-textGreen'>interactive with the music</span> being played.
             </p>
+            <ul className='text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark'>
+              <li>Three.js</li>
+              <li>React</li>
+              <li>Typescript</li>
+            </ul>
+            <div className='text-2xl flex gap-4'>
+              <a
+                className='hover:text-textGreen duration-300'
+                href="https://github.com/doctorcrawford/synesthesia"
+                target='_blank'
+              >
+                <TbBrandGithub />
+              </a>
+              <a
+                className='hover:text-textGreen duration-300'
+                href="https://doctorcrawford.github.io/synesthesia/"
+                target='_blank'
+              >
+                <RxOpenInNewWindow />
+              </a>
+            </div>
           </div>
         </div>
       </div>
