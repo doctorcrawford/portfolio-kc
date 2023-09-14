@@ -9,7 +9,12 @@ const Archive = () => {
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10">
-        <ArchiveCard />
+        <ArchiveCard 
+          title="KNXN"
+          des="Original music by Nick Capuano and myself"
+          listItem={["Groovy Beats", "Saxophone", "Good Times"]}
+          link="https://linktr.ee/knxnmusic"
+        />
       </div>
     </div>
   )
