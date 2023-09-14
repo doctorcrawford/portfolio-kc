@@ -1,5 +1,5 @@
 import { TbBrandGithub } from 'react-icons/tb';
-import { SlSocialLinkedin, SlSocialInstagram, SlMusicToneAlt } from 'react-icons/sl'
+import { SlSocialLinkedin, SlSocialSpotify, SlMusicToneAlt } from 'react-icons/sl'
 
 const LeftSide = () => {
   return (
@@ -15,9 +15,9 @@ const LeftSide = () => {
             <SlSocialLinkedin />
             </span>
         </a>
-        <a href="https://www.instagram.com/doctorcrawford" target='_blank'>
+        <a href="https://open.spotify.com/artist/6IePE0TDlAmOQT7iZtlZ55?si=QdxoQNRgQMCTzVUv3PK4Iw" target='_blank'>
           <span className='w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300'>
-            <SlSocialInstagram />
+            <SlSocialSpotify />
             </span>
         </a>
         <a href="https://linktr.ee/knxnmusic" target='_blank'>
@@ -26,9 +26,7 @@ const LeftSide = () => {
             </span>
         </a>
       </div>
-      <div className='w-[2px] h-32 bg-textDark'>
-
-      </div>
+      <div className='w-[2px] h-32 bg-textDark'></div>
     </div>
   );
 };
