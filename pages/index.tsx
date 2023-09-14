@@ -1,7 +1,10 @@
+import Navbar from "./comonents/Navbar";
 
 
 export default function Home() {
   return (
-    <main>New Portfolio</main>
+    <main className="w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll">
+      <Navbar />
+    </main>
   )
 }
