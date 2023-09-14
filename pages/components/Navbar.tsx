@@ -33,23 +33,13 @@ const Navbar = () => {
                 About
               </motion.li>
             </Link>
-            <Link href="#experience" className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link">
-              <motion.li
-                initial={{ y: -25, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                <span className="text-textGreen">02.</span>
-                Experience
-              </motion.li>
-            </Link>
             <Link href="#projects" className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link">
               <motion.li
                 initial={{ y: -25, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <span className="text-textGreen">03.</span>
+                <span className="text-textGreen">02.</span>
                 Projects
               </motion.li>
             </Link>
@@ -59,7 +49,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <span className="text-textGreen">04.</span>
+                <span className="text-textGreen">03.</span>
                 Contact
               </motion.li>
             </Link>
