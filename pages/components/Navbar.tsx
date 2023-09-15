@@ -13,6 +13,7 @@ const Navbar = () => {
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
+    setShowMenu(false);
     const href = e.currentTarget.href;
     const targetId = href.replace(/.*\#/, "");
     const elem = document.getElementById(targetId);
@@ -249,8 +250,20 @@ const Navbar = () => {
                       </span>
                     </motion.a>
                   </div>
-
                 </div>
+                <motion.a
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    delay: 1.2,
+                    ease: "easeIn"
+                  }}
+                  href="mailto:kcraw217@gmail.com"
+                >
+                  <p className="text-sm w-72 tracking-widest text-textYellow text-center mt-12">
+                    email@me.com
+                  </p>
+                </motion.a>
               </motion.div>
             </div>
           )
