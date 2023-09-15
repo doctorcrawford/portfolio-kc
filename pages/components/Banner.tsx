@@ -32,14 +32,14 @@ const Banner = () => {
       >
         Full stack software developer, with a foundation in JavaScript, Typescript, React, and C#/.NET. I enjoy playing and producing music, working with my hands and exploring the great outdoors.
       </motion.p>
-      <motion.button
+      {/* <motion.button
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.9 }}
         className='w-52 h-14 text-sm font-titleFont border border-textYellow rounded-md text-textYellow tracking-wide hover:bg-hoverColor duration-300'
       >
         Check out my projects!
-      </motion.button>
+      </motion.button> */}
     </section>
   );
 };
