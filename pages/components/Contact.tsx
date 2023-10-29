@@ -15,12 +15,15 @@ const Contact = () => {
         Always looking for new challenges to tackle that allow me to apply my skills and experience while continuing to learn and grow. Or just say hello!
       </p>
       {/* <div className="w-80 h-80 rounded-lg bg-[#112240] p-7 flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group"> */}
-      <div className="mx-auto py-10 xl:py-32 flex flex-col items-center justify-center rounded-lg bg-[#112240] p-7 gap-6 hover:-translate-y-2 transition-transform duration-300 group w-10/12 w-max-500">
+      <div className="mx-auto py-10 xl:py-32 flex flex-col items-center rounded-lg bg-[#112240] p-7 gap-6 hover:-translate-y-2 transition-transform duration-300 group w-10/12 w-max-500">
         <h1 className="text-xl font-titleFont font-semibold tracking-wide group-hover:text-textYellow">
           Contact Me
         </h1>
         {/* <!-- contact form --> */}
-        <form id="myForm">
+        <form
+          id="myForm"
+          className='space-y-2'
+          >
           {/* <!-- name --> */}
           <div className="form-group">
             <input
