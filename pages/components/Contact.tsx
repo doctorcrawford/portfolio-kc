@@ -14,22 +14,21 @@ const Contact = () => {
       <p className="max-w-[600px] text-center text-textDark">
         Always looking for new challenges to tackle that allow me to apply my skills and experience while continuing to learn and grow. Or just say hello!
       </p>
-      {/* <div className="w-80 h-80 rounded-lg bg-[#112240] p-7 flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group"> */}
-      <div className="mx-auto py-10 xl:py-32 flex flex-col items-center rounded-lg bg-[#112240] p-7 gap-6 hover:-translate-y-2 transition-transform duration-300 group w-10/12 w-max-500">
-        <h1 className="text-xl font-titleFont font-semibold tracking-wide group-hover:text-textYellow">
+      <div className="mx-auto w-10/12 max-w-contentContainer xl:flex flex-col items-center rounded-lg bg-[#112240] p-7 gap-6 hover:-translate-y-2 transition-transform duration-300 group">
+        <h2 className="text-xl font-titleFont font-semibold tracking-wide py-1 pt-0 group-hover:text-textYellow text-center sm:pb-2 md:pb-3">
           Contact Me
-        </h1>
+        </h2>
         {/* <!-- contact form --> */}
         <form
           id="myForm"
-          className='space-y-2'
-          >
+          className='space-y-2 text-black w-11/12'
+        >
           {/* <!-- name --> */}
           <div className="form-group">
             <input
               type="name"
               name="name"
-              className="form-control"
+              className="form-control rounded-md w-full p-1"
               id="name"
               placeholder="Name"
             />
@@ -40,7 +39,7 @@ const Contact = () => {
             <input
               type="email"
               name="email"
-              className="form-control"
+              className="form-control rounded-md w-full p-1"
               id="email"
               placeholder="Email Address"
             />
@@ -51,7 +50,7 @@ const Contact = () => {
             <input
               type="text"
               name="subject"
-              className="form-control"
+              className=" rounded-md p-1 xl:p-2 w-full"
               id="subject"
               placeholder="Subject"
             />
@@ -59,7 +58,7 @@ const Contact = () => {
 
           <div className="form-group">
             <textarea
-              className="form-control"
+              className="form-control rounded-md w-full p-1"
               id="message"
               name="message"
               rows={5}
@@ -67,7 +66,12 @@ const Contact = () => {
             ></textarea>
           </div>
 
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button
+            type="submit"
+            className="bg-textYellow p-1.5 rounded-md hover:text-white xl:p-2"
+          >
+            Submit
+          </button>
         </form>
       </div>
 
