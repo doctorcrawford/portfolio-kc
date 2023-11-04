@@ -26,21 +26,22 @@ const Form = () => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const serviceID = "service_kzitiuc";
-    const templateID = "template_x6q03hw";
+    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
     const apiKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
     const target = e.target as HTMLFormElement
-    console.log(apiKey)
 
-    sendForm(serviceID, templateID, target, apiKey)
-      .then((result) => {
-        setAlert(false);
-        setFormValues(initialValues);
-        setFormSubmit(true);
-      },
-        (error) => {
-          console.log(error.text)
-        });
+    if (serviceID && templateID && apiKey) {
+      sendForm(serviceID, templateID, target, apiKey)
+        .then((result) => {
+          setAlert(false);
+          setFormValues(initialValues);
+          setFormSubmit(true);
+        },
+          (error) => {
+            console.log(error.text)
+          });
+    }
   };
 
   const validateFormFields = (e: React.FormEvent<HTMLFormElement>) => {
