@@ -1,6 +1,6 @@
 import { sendForm } from "@emailjs/browser";
-import { Input } from "postcss";
 import { useState, Dispatch, SetStateAction } from "react"
+import LoadingSpin from "react-loading-spin";
 
 interface FormProps {
   formSubmit: boolean,
@@ -17,6 +17,8 @@ const Form = ({ formSubmit, setFormSubmit }: FormProps) => {
 
   const [formValues, setFormValues] = useState(initialValues);
   const [alert, setAlert] = useState(false);
+  const [showLoader, setShowLoader] = useState(false);
+
 
   type InputText = React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>
 
@@ -28,22 +30,26 @@ const Form = ({ formSubmit, setFormSubmit }: FormProps) => {
     });
   };
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setShowLoader(true);
+
     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
     const apiKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
     const target = e.target as HTMLFormElement
 
     if (serviceID && templateID && apiKey) {
-      sendForm(serviceID, templateID, target, apiKey)
+      await sendForm(serviceID, templateID, target, apiKey)
         .then((result) => {
           setAlert(false);
+          setShowLoader(false);
           setFormValues(initialValues);
           setFormSubmit(true);
         },
           (error) => {
             console.log(error.text)
+            setShowLoader(false);
           });
     }
   };
@@ -117,7 +123,7 @@ const Form = ({ formSubmit, setFormSubmit }: FormProps) => {
             type="submit"
             className="bg-textYellow p-1.5 rounded-md hover:text-white xl:p-2"
           >
-            Submit
+            {!showLoader ? 'Submit' : <LoadingSpin primaryColor='#0A192F' secondaryColor="#ccd6f6" />}
           </button>
         </form>
       }
