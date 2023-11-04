@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import { TbTriangleInverted } from 'react-icons/tb'
 import { init, sendForm } from '@emailjs/browser';
 import Form from './Form';
 
 
 const Contact = () => {
+  const [formSubmit, setFormSubmit] = useState(false);
   return (
     <section
       id="contact"
@@ -19,9 +21,9 @@ const Contact = () => {
       </p>
       <div className="mx-auto w-10/12 max-w-contentContainer xl:flex flex-col items-center rounded-lg bg-[#112240] p-7 gap-6 hover:-translate-y-2 transition-transform duration-300 group">
         <h2 className="text-xl font-titleFont font-semibold tracking-wide py-1 pt-0 group-hover:text-textYellow text-center sm:pb-2 md:pb-3">
-          Contact Me
+          {formSubmit ? 'Thanks! Talk to you soon...' : 'Contact Me'}
         </h2>
-        <Form />
+        <Form formSubmit={formSubmit} setFormSubmit={setFormSubmit} />
       </div>
     </section>
   );

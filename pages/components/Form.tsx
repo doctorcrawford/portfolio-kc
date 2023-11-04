@@ -1,8 +1,13 @@
 import { sendForm } from "@emailjs/browser";
 import { Input } from "postcss";
-import { useState } from "react"
+import { useState, Dispatch, SetStateAction } from "react"
 
-const Form = () => {
+interface FormProps {
+  formSubmit: boolean,
+  setFormSubmit: Dispatch<SetStateAction<boolean>>
+}
+
+const Form = ({ formSubmit, setFormSubmit }: FormProps) => {
   const initialValues = {
     name: '',
     email: '',
@@ -11,7 +16,7 @@ const Form = () => {
   }
 
   const [formValues, setFormValues] = useState(initialValues);
-  const [formSubmit, setFormSubmit] = useState(false);
+  // const [formSubmit, setFormSubmit] = useState(false);
   const [alert, setAlert] = useState(false);
 
   type InputText = React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>
