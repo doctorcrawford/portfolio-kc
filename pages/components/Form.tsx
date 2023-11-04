@@ -16,7 +16,6 @@ const Form = ({ formSubmit, setFormSubmit }: FormProps) => {
   }
 
   const [formValues, setFormValues] = useState(initialValues);
-  // const [formSubmit, setFormSubmit] = useState(false);
   const [alert, setAlert] = useState(false);
 
   type InputText = React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>
