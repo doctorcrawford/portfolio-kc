@@ -4,30 +4,6 @@ import Form from './Form';
 
 
 const Contact = () => {
-
-  // const form = document.getElementById("myForm") as HTMLFormElement;
-  // form?.addEventListener("submit", function (e) {
-  //   e.preventDefault();
-  //   const apiKey = process.env.EMAILJS_PUBLIC_KEY;
-  //   const serviceID = "service_kzitiuc";
-  //   const templateID = "template_x6q03hw";
-  //   console.log("apikey ", apiKey)
-
-  //   if (apiKey) {
-  //     init(apiKey);
-  //   }
-
-  //   sendForm(serviceID, templateID, form, 'PtzET5wjXWsR6PJPe').then(response => {
-  //     console.log("success!", response.status, response.text);
-  //     alert("success!");
-  //   },
-  //     error => {
-  //       console.log("failed...", error);
-  //       alert("failed...");
-  //     }
-  //   );
-  // });
-
   return (
     <section
       id="contact"
@@ -45,17 +21,8 @@ const Contact = () => {
         <h2 className="text-xl font-titleFont font-semibold tracking-wide py-1 pt-0 group-hover:text-textYellow text-center sm:pb-2 md:pb-3">
           Contact Me
         </h2>
-        {/* <!-- contact form --> */}
         <Form />
       </div>
-
-      {/* Previous simple method for emailing */}
-      {/* <a href="mailto:noor.kcraw217@gmail.com">
-        <button className="w-40 h-14 border border-textYellow mt-6 font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300">
-          Say Hello
-        </button>
-      </a> */}
-
     </section>
   );
 };
