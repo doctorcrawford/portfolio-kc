@@ -119,12 +119,15 @@ const Form = ({ formSubmit, setFormSubmit }: FormProps) => {
             onChange={handleInputChange}
           ></textarea>
 
-          <button
-            type="submit"
-            className="bg-textYellow p-1.5 rounded-md hover:text-white xl:p-2"
-          >
-            {!showLoader ? 'Submit' : <LoadingSpin primaryColor='#0A192F' secondaryColor="#ccd6f6" />}
-          </button>
+          {!showLoader
+            ? <button
+              type="submit"
+              className="bg-textYellow p-1.5 rounded-md hover:text-white xl:p-2"
+            >
+              Submit
+            </button>
+            : <LoadingSpin primaryColor='#d9ae38' secondaryColor="#ccd6f6" size="40px" />
+          }
         </form>
       }
     </>
