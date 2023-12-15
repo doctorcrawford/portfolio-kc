@@ -10,7 +10,7 @@ const RightSide = () => {
           delay: 1.2,
           ease: "easeIn"
         }}
-        href="mailto:kcraw217@gmail.com"
+        href="#contact"
       >
         <p className="text-sm rotate-90 w-72 tracking-wide text-textYellow">
           email@me.com

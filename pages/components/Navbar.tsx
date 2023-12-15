@@ -258,7 +258,7 @@ const Navbar = () => {
                     delay: 1.2,
                     ease: "easeIn"
                   }}
-                  href="mailto:kcraw217@gmail.com"
+                  href="#contact"
                 >
                   <p className="text-sm w-72 tracking-widest text-textYellow text-center mt-12">
                     email@me.com
